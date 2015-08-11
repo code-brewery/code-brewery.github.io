@@ -5,6 +5,10 @@ var gulp = require('gulp'),
 
 elixir(function (mix) {
     mix.sass('app.scss')
+        .styles([
+            "./node_modules/normalize.css/normalize.css",
+            "./assets/css/app.css"
+        ], 'assets/css/app.css')
         .browserify('app.js')
         .task('serve');
 });
