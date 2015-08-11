@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: -apple-system, 'Lato', 'Helvetica Neue', 'Lucida Grande' sans-serif;
+    font-weight: 100;
+    font-size: 62,5%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand {
+    font-weight: 100;
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.brand-logo {
+    background: url('../code-brewery-logo.png') no-repeat center top;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+
+.brand-logo:hover {
+    background: url('../code-brewery-logo-color.png') no-repeat center top;
+    background-size: contain;
+}

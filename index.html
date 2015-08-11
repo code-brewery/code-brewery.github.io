@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Brewery</title>
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" 
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="brand">Code Brewery</h1>
+        <img class="brand-logo"
+             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+             alt="Code Brewery Logo">
+    </header>
+    <section class="content" id="app">
+        <div class="members" v-show="members.length">
+            <ul class="list-unstyled members__list">
+                <li v-repeat="member: members"
+                    class="members__member">
+                    <a target="_blank" href="{{member.profile_url}}">
+                        <img class="members__member_avatar" 
+                             v-attr="src: member.avatar">
+                        <span class="members__member_username">
+                            {{member.username}}
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="social">
+            <h3>Find us</h3>
+            <ul class="list-unstyled social__list">
+                <li class="social__link social__github">
+                    <a target="_blank" href="https://github.com/code-brewery">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li class="social__link social__twitter">
+                    <a target="_blank" href="https://twitter.com/code_brewery">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>

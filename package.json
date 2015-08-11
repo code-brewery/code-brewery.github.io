@@ -1,0 +1,36 @@
+{
+  "name": "code-brewery.github.io",
+  "version": "1.0.0",
+  "description": "Code Brewery website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code-brewery/code-brewery.github.io.git"
+  },
+  "author": [
+    {
+      "name": "Mattias Lyckne",
+      "email": "mattias@code-brewery.recipes"
+    },
+    {
+      "name": "Jesper Erlandsson",
+      "email": "jesper@code-brewery.recipes"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/code-brewery/code-brewery.github.io/issues"
+  },
+  "homepage": "https://github.com/code-brewery/code-brewery.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0",
+    "laravel-elixir": "^3.1.2",
+    "normalize.css": "^3.0.3",
+    "vue": "^0.12.10",
+    "vue-resource": "^0.1.11"
+  }
+}

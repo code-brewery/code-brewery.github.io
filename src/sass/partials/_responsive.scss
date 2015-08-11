@@ -1,0 +1,21 @@
+@media screen and(min-width: 321px) {
+    .site-header {
+        height: 300px;
+    }
+
+    .brand {
+        font-size: 4rem;
+    }
+    
+    .brand-logo {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media screen and(min-width: 1024px) {
+    .members__member_avatar {
+        max-width: 160px;
+    }
+}
